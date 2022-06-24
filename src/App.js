@@ -4,7 +4,6 @@ import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-do
 
 import Postagens from './components/Postagens/Postagens'
 import DetalhesPostagem from './components/DetalhesPostagem/DetalhesPostagem'
-import Home from './components/Home/Home'
 
 function App() {
   return (
@@ -14,10 +13,7 @@ function App() {
           <nav>
             <ul>
               <li>
-                <NavLink to="/" exact>Início</NavLink>
-              </li>
-              <li>
-                <NavLink to="/postagens">Postagens</NavLink>
+                <NavLink to="/" exact>Noticias</NavLink>
               </li>
             </ul>
           </nav>
@@ -26,7 +22,7 @@ function App() {
         <main>
           <Switch>
             <Route path="/" exact>
-              <Home />
+              <Postagens />
             </Route>
             <Route path="/postagens/:id">
               <DetalhesPostagem />
