@@ -24,15 +24,14 @@ function App() {
             <Route path="/" exact>
               <Postagens />
             </Route>
-            <Route path="/postagens/:id">
+            <Route path="/postagens/:id" exact>
               <DetalhesPostagem />
             </Route>
             <Route path="/postagens">
               <Postagens />
             </Route>
             <Route path="*">
-              <h1>404</h1>
-              <p>Página não encontrada!</p>
+              <Postagens />
             </Route>
           </Switch>
         </main>

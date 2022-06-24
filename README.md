@@ -2,41 +2,21 @@
 Um projeto Front-End integrado com ReactJs
 
 # Instalação
-´npm install -g npx´
-
-´yarn create-react-app nomeProjeto´ // Criar um projeto com reactJS
-
+´npm install´
 ´yarn start´
 
-# Sobre o projeto
+#INFORMAÇÃO
+Node 17.7.1
+linux Ubuntu 21.10
 
-Métodos de ciclo de vida de um componente React;
-    - Initialization: (Setup props, state)
-    - Mounting (WillMount, render, didMount)
-    - Updattion (Props, states)
-    - Unmounting ()
+Obs:  Cara eu sei que é chato falar isso, mas esta funcionando corretamente na minha maquina, eu não sei o que pode estar acontecendo nos seus testes.
+Fiz mais umas alterações mas confesso se não dar certo não vou tentar de novo.
 
-Components:
-    - De Função JSX (function () => return ...) sem ciclo de vida
-    - De Classe (class NomeComponent extends Component { render ()}) + Ciclo de vida
+O que eu entendi do desafio.
+Na "rota /" listar as postagem via requisição GET (https://jsonplaceholder.typicode.com/posts)
+Quando clicar no titulo ir para outra página com os detalhes da postagem
 
-Hooks;
-    - Hooks: Faz um component de função se comportar como component de Classe.
-    - Traz o ciclo de vida para o compoent de função
-    - é identificado por "use"+ ativo o hook ex: useState() para acessar o state.
-    - useState()
-    - useEffect()
-    - useContext()
+Rodar o npm install e npm start
 
-Fazer rotas;
-
-Redux;
-    - Controlador de estado da aplicação.
-    -> Componet -> Action -> Reducer -> Store
-
-Validação de Formulários;
-
-Formik;
-
-Yup;
+Vou enviar um vídeo mostrando o funcionamento.
 

@@ -31,7 +31,7 @@ function DetalhesPostagem() {
   }
 
   return <>
-    <h1>Usuário não encontrado!</h1>
+    <h1>Noticia não encontrada!</h1>
     <Link to="/postagens">Voltar</Link>
   </>
 }
