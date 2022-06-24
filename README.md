@@ -20,3 +20,5 @@ Rodar o npm install e npm start
 
 Vou enviar um vídeo mostrando o funcionamento.
 
+LINK do vídeo: https://drive.google.com/file/d/1n5-GTPw0WG4gCT2JC421ak-uF30zvVkv/view?usp=sharing
+
