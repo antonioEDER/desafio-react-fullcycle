@@ -1,43 +1,49 @@
-import { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Comentario from './components/Comentario';
-// function App () {
-  
-class App extends Component {
-  state = {
-    comentarios: []
-  }
+import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom';
 
-  componentDidMount() {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", 'https://jsonplaceholder.typicode.com/posts', false );
-    xmlHttp.send( null );
-    const comentarios = JSON.parse(xmlHttp.responseText);
-      
-    this.setState({
-      comentarios
-    })
-  }
+import Postagens from './components/Postagens/Postagens'
+import DetalhesPostagem from './components/DetalhesPostagem/DetalhesPostagem'
+import Home from './components/Home/Home'
 
-  render () {
-    return (
+function App() {
+  return (
+    <Router>
       <div className="App">
-        <h1>Meu projeto desafio 02 fullcycle</h1>
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <NavLink to="/" exact>Início</NavLink>
+              </li>
+              <li>
+                <NavLink to="/postagens">Postagens</NavLink>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-        {
-          this.state.comentarios.map((comentario, indice) => (
-            <Comentario
-              userId={comentario.userId}
-              id={comentario.id}
-              title={comentario.title}
-              body={comentario.body}
-              key={comentario.indice}
-            />
-          ))
-        }
+        <main>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/postagens/:id">
+              <DetalhesPostagem />
+            </Route>
+            <Route path="/postagens">
+              <Postagens />
+            </Route>
+            <Route path="*">
+              <h1>404</h1>
+              <p>Página não encontrada!</p>
+            </Route>
+          </Switch>
+        </main>
       </div>
-    );
-  }
+    </Router>
+
+  );
 }
 
 export default App;
