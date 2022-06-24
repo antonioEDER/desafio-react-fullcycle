@@ -7,23 +7,3 @@ Um projeto Front-End integrado com ReactJs
 ´yarn create-react-app nomeProjeto´ // Criar um projeto com reactJS
 
 ´yarn start´
-
-# Sobre o projeto
-
-Métodos de ciclo de vida de um componente React;
-
-Hooks;
-
-Fazer rotas;
-
-Redux;
-
-Validação de Formulários;
-
-Formik;
-
-Yup;
-
-
-# JSX
-
